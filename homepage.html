@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruh Dance Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f8f5fc;
+        }
+        header {
+            background: #480e6d;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #2e054c;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcb05;
+        }
+        .hero {
+    background: linear-gradient(rgba(72,14,109,0.7), rgba(72,14,109,0.7)),
+                url('homepic.jpg') center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+        .hero h1 { font-size: 3em; margin-bottom: 10px; }
+        .hero p { font-size: 1.5em; margin-bottom: 35px; }
+        .hero button {
+            background: #ffcb05; color: #480e6d;
+            border: none; padding: 15px 32px;
+            font-size: 1.1em; border-radius: 5px;
+            cursor: pointer; font-weight: bold;
+        }
+        .section { padding: 50px 20px; max-width: 1100px; margin: 0 auto; }
+        .section h2 { color: #480e6d; margin-bottom: 20px; }
+        .about, .classes, .testimonials, .contact {
+            background: #fff; border-radius: 8px;
+            box-shadow: 0 2px 10px #e2d6f2;
+            margin-bottom: 35px;
+            padding: 30px 24px;
+        }
+        .classes-list { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 20px; }
+        .class-item {
+            background: #f1eeff;
+            padding: 18px 10px;
+            border-radius: 6px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 1px 6px #e2d6f2;
+        }
+        .gallery-images {
+            display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px;
+        }
+        .gallery-images img {
+            width: 170px; height: 115px;
+            object-fit: cover; border-radius: 8px;
+            box-shadow: 0 1px 6px #e2d6f2;
+        }
+        .testimonial {
+            font-style: italic;
+            background: #f1eeff; padding: 18px;
+            border-radius: 6px; margin-bottom: 10px;
+        }
+        footer {
+            background: #2e054c; color: #fff;
+            text-align: center; padding: 20px 0;
+        }
+        @media (max-width: 700px) {
+            .classes-list, .gallery-images { flex-direction: column; gap: 10px; align-items: center;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ruh Dance Studio</h1>
+        <p>Where Movement Inspires</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="C:\Users\KESAR\OneDrive\Documents\WT_assignment\about.html">About Us</a>
+        <a href="C:\Users\KESAR\OneDrive\Documents\WT_assignment\timeslots.html">Classes Timings</a>
+        <a href="C:\Users\KESAR\OneDrive\Documents\WT_assignment\form.html">Join Now</a>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to Ruh Dance Studio</h1>
+        <p>Unleash your passion for dance – world-class instructors, vibrant community, diverse styles</p>
+        <button onclick="window.location='form.html'">Join Us</button>
+
+    </section>
+    <section class="section about" id="about">
+        <h2>About Us</h2>
+        <p>Ruh Dance Studio is dedicated to celebrating the art of dance, from classical to contemporary. Our mission is to nurture talent, creativity, and self-expression through movement. Led by passionate instructors, we offer a welcoming space for all ages and experience levels.</p>
+    </section>
+    
+    <footer>
+        &copy; 2025 Ruh Dance Studio | Teachers:-Kesar Bavaria,Tanishka Uprety , Managed by :- Aryan vaghmode !!
+       
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Slots</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298, #1e90ff, #00c6ff);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #e0f7ff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .table-container {
+      width: 90%;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid rgba(255,255,255,0.6); 
+    }
+
+    th {
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #fff;
+      background: rgba(0, 198, 255, 0.4);
+    }
+
+    tr:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transition: 0.3s;
+    }
+
+    /* Availability Badges */
+    .status {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .available {
+      background: rgba(0, 255, 127, 0.2);
+      color: #00ff9d;
+      border: 1px solid #00ff9d;
+    }
+
+    .few {
+      background: rgba(255, 215, 0, 0.2);
+      color: #ffd700;
+      border: 1px solid #ffd700;
+    }
+
+    .none {
+      background: rgba(255, 69, 58, 0.2);
+      color: #ff4b5c;
+      border: 1px solid #ff4b5c;
+    }
+
+    /* Back link */
+    a {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      color: #e0f7ff;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h2>Time Slots Available</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Days</th>
+          <th>Category</th>
+          <th>Time</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Monday</td>
+          <td>Freestyle</td>
+          <td>6:30-7:30</td>
+          <td><span class="status available">Available</span></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Ballet</td>
+          <td>7:30-8:30</td>
+          <td><span class="status few">Few seats left</span></td>
+        </tr>
+        <tr>
+          <td>8:30-9:30</td>
+          <td><span class="status none">No Availability</span></td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Tuesday</td>
+          <td rowspan="2">Hip-Hop</td>
+          <td>4:30-5:30</td>
+          <td><span class="status available">Available</span></td>
+        </tr>
+        <tr>
+          <td>5:30-6:30</td>
+          <td><span class="status none">No Availability</span></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Lyrical</td>
+          <td>6:30-7:30</td>
+          <td><span class="status few">Few seats left</span></td>
+        </tr>
+        <tr>
+          <td>7:30-8:30</td>
+          <td><span class="status available">Available</span></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Wednesday</td>
+          <td>Ballet</td>
+          <td>4:30-5:30</td>
+          <td><span class="status available">Available</span></td>
+        </tr>
+        <tr>
+          <td>Freestyle</td>
+          <td>5:30-6:30</td>
+          <td><span class="status few">Few seats left</span></td>
+        </tr>
+        <tr>
+          <td>Hip-Hop</td>
+          <td>6:30-7:30</td>
+          <td><span class="status none">No Availability</span></td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Thursday</td>
+          <td rowspan="2">Contemporary</td>
+          <td>4:30-5:30</td>
+          <td><span class="status none">No Availability</span></td>
+        </tr>
+        <tr>
+          <td>5:30-6:30</td>
+          <td><span class="status none">No Availability</span></td>
+        </tr>
+
+        <tr>
+          <td>Friday</td>
+          <td>Classical</td>
+          <td>6:30-8:30</td>
+          <td><span class="status few">Few seats left</span></td>
+        </tr>
+
+        <tr>
+          <td>Saturday</td>
+          <td>Garba</td>
+          <td>7:30-9:30</td>
+          <td><span class="status none">No Availability</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <a href="homepage.html">⬅ Back to Home</a>
+</body>
+</html>
